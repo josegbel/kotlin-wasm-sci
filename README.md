@@ -1,19 +1,19 @@
-This is a Kotlin Multiplatform project targeting Web.
+# My Personal Website with Kotlin WASM 🌍
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+Welcome to the repository for my personal website, powered by Kotlin WebAssembly (WASM). This project leverages the power of Kotlin to bring high-performance web applications to life, utilizing Compose Multiplatform for an expressive and concise UI development.
 
+## About Kotlin WASM 🚀
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+Kotlin WASM is a cutting-edge technology that allows Kotlin code to compile into WebAssembly (WASM), enabling developers to write web applications in Kotlin that execute at near-native speed in the browser. This approach brings Kotlin's pragmatic and concise syntax to the web, offering a performant and type-safe way to build web applications.
 
-**Note:** Compose/Web is Experimental and may be changed at any time. Use it only for evaluation purposes.
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
+## Compose Multiplatform for Web 🖌️
 
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+Compose Multiplatform, used in this project, is a modern UI framework that allows for building expressive and flexible user interfaces. It extends the powerful features of Jetpack Compose to the web, allowing developers to write UI code that is compatible across web and mobile platforms. With Compose Multiplatform, we can create dynamic and responsive web applications using Kotlin, bringing a cohesive development experience across platforms.
+
+## Final Thoughts 💭
+
+This project is a demonstration of the capabilities of Kotlin WASM and Compose Multiplatform in creating a modern, high-performance personal website. It showcases how Kotlin's ecosystem can be extended to web development, providing a seamless and efficient development experience.
+
+Thank you for visiting my repository. I hope you find this project inspiring and useful for your own explorations into Kotlin web development.
+
+Happy coding! 👨‍💻👩‍💻

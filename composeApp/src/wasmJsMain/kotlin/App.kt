@@ -1,26 +1,28 @@
-import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import composables.CardContent
-import kotlinx.coroutines.*
+import jgweb.composeapp.generated.resources.Res
+import jgweb.composeapp.generated.resources.background
+import org.jetbrains.compose.resources.ExperimentalResourceApi
+import org.jetbrains.compose.resources.painterResource
 
+@OptIn(ExperimentalResourceApi::class)
 @Composable
 fun App() {
     MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
-        rememberCoroutineScope {
-            CoroutineScope(Job() + Dispatchers.Default).launch {
-                delay(300L)
-                showContent = true
-            }
-        }
-        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-            AnimatedVisibility(showContent) {
-                CardContent()
-            }
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+            Image(
+                painter = painterResource(Res.drawable.background),
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize(),
+                contentScale = ContentScale.Crop // Adjust the scaling to fit/fill as required
+            )
+            CardContent()
         }
     }
 }
